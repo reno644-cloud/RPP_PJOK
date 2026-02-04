@@ -86,32 +86,33 @@ export const generateRPPM = async (data: RPPMFormData): Promise<string> => {
       1. Baris Pendahuluan:
          - Isi Kolom Tahap: "Pendahuluan (Memahami)"
          - Isi Kolom Kegiatan:
-           WAJIB Gunakan Penomoran (1, 2, 3):
-           1. Pembukaan (Salam, doa, presensi).
+           WAJIB menggunakan format urutan angka (Numbered List) sebagai berikut:
+           1. Pembukaan (Salam, presensi, doa).
            2. Apersepsi (Mengaitkan dengan materi sebelumnya).
-           3. Pemanasan / Warming Up (Aktivitas fisik terkait materi).
+           3. Pemanasan (Warming Up) (Aktivitas fisik spesifik terkait materi).
            
+           (Deskripsikan detail operasional untuk setiap poin di atas dalam kalimat lengkap).
            Akhiri dengan teks bold di baris baru: <br>**(BERKESADARAN)**
          - Isi Kolom Waktu: (durasi, e.g. 15 Menit)
 
       2. Baris Inti:
          - Isi Kolom Tahap: "Inti (Mengaplikasikan)"
          - Isi Kolom Kegiatan:
-           WAJIB Gunakan Penomoran (1, 2, 3, dst) untuk Langkah-langkah Sintaks sesuai model "${data.pedagogy}".
-           Generate SINTAKS OTOMATIS yang detail dan operasional membahas materi "${data.material}".
+           WAJIB menggunakan format urutan angka (Numbered List) SINTAKS OTOMATIS sesuai model "${data.pedagogy}".
            
-           Contoh SINTAKS (Sesuaikan dengan model yang dipilih):
-           - Inkuiri/Discovery: 1. Stimulasi, 2. Identifikasi Masalah, 3. Pengumpulan Data, 4. Pengolahan Data, 5. Pembuktian, 6. Generalisasi.
-           - PBL: 1. Orientasi Masalah, 2. Organisasi Belajar, 3. Penyelidikan, 4. Pengembangan Karya, 5. Evaluasi.
-           - TGfU/Game Based: 1. Pengenalan Permainan, 2. Kesadaran Taktis, 3. Pengambilan Keputusan, 4. Eksekusi Skill, 5. Penampilan.
+           Panduan SINTAKS (Gunakan yang sesuai dengan model yang dipilih):
+           - Jika Inkuiri/Discovery: 1. Stimulasi/Rangsangan, 2. Identifikasi Masalah, 3. Pengumpulan Data, 4. Pengolahan Data, 5. Pembuktian, 6. Generalisasi.
+           - Jika PBL: 1. Orientasi Masalah, 2. Organisasi Belajar, 3. Penyelidikan, 4. Pengembangan Karya, 5. Evaluasi.
+           - Jika TGfU: 1. Pengenalan Permainan, 2. Kesadaran Taktis, 3. Pengambilan Keputusan, 4. Eksekusi Skill, 5. Penampilan.
            
+           (Jabarkan aktivitas siswa dan guru secara detail pada setiap langkah sintaks tersebut).
            Akhiri dengan teks bold di baris baru: <br>**(BERMAKNA DAN MENGGEMBIRAKAN)**
          - Isi Kolom Waktu: (durasi)
 
       3. Baris Penutup:
          - Isi Kolom Tahap: "Penutup (Refleksi)"
          - Isi Kolom Kegiatan:
-           WAJIB Gunakan Penomoran (1, 2, 3):
+           WAJIB menggunakan format urutan angka (Numbered List):
            1. Pendinginan (Cooling Down).
            2. Refleksi & Umpan Balik.
            3. Doa & Penutup.
