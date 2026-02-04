@@ -40,6 +40,7 @@ export const generateRPPM = async (data: RPPMFormData): Promise<string> => {
     ATURAN WARNA (CRITICAL):
     1. JUDUL UTAMA (Baris Poin 1, 2, 3, 4, 5): Teks WAJIB berwarna MERAH (#FF0000) dan Bold.
     2. SELURUH ISI TABEL LAINNYA (Termasuk Tahap, Kegiatan, Waktu): Teks WAJIB berwarna HITAM (#000000).
+    3. TANDA TANGAN: Teks WAJIB berwarna HITAM (#000000).
 
     STRUKTUR & LAYOUT (GENERATE SECARA BERURUTAN):
 
@@ -132,10 +133,10 @@ export const generateRPPM = async (data: RPPMFormData): Promise<string> => {
     <!-- TANDA TANGAN (TABEL 6 - TANPA BORDER) -->
     - Buat <table> baru dengan width 100%, border 0.
     - <tr>
-        <td style="width: 50%; text-align: center; padding-top: 30px; color: #000000;">
+        <td style="width: 50%; text-align: center; padding-top: 30px; color: #000000; font-family: 'Arial', sans-serif;">
           Mengetahui Kepala Sekolah<br><br><br><br><b>${data.principalName}</b><br>NIP. ${data.principalNip}
         </td>
-        <td style="width: 50%; text-align: center; padding-top: 30px; color: #000000;">
+        <td style="width: 50%; text-align: center; padding-top: 30px; color: #000000; font-family: 'Arial', sans-serif;">
           Guru Mata Pelajaran<br><br><br><br><b>${data.teacherName}</b><br>NIP. ${data.teacherNip}
         </td>
       </tr>
