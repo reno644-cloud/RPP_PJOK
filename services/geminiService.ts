@@ -81,21 +81,42 @@ export const generateRPPM = async (data: RPPMFormData): Promise<string> => {
     - Judul: <tr><td colspan="3" style="color: #FF0000; font-weight: bold; background-color: #f2f2f2; border: 1px solid black; padding: 10px;">4. PENGALAMAN BELAJAR</td></tr>
     - Header Kolom: <tr><td style="width: 20%; font-weight: bold; text-align: center; border: 1px solid black; color: #000000;">Tahap</td><td style="width: 65%; font-weight: bold; text-align: center; border: 1px solid black; color: #000000;">Kegiatan Pembelajaran</td><td style="width: 15%; font-weight: bold; text-align: center; border: 1px solid black; color: #000000;">Waktu</td></tr>
     - Konten (Untuk setiap Pertemuan 1 s.d ${data.meetingCount}):
-      (Untuk setiap pertemuan, buat 3 baris kegiatan. Pastikan Teks berwarna HITAM #000000):
+      (Untuk setiap pertemuan, buat 3 baris kegiatan (Pendahuluan, Inti, Penutup). Pastikan SEMUA Teks dalam tabel berwarna HITAM #000000):
       
       1. Baris Pendahuluan:
          - Isi Kolom Tahap: "Pendahuluan (Memahami)"
-         - Isi Kolom Kegiatan: Jelaskan kegiatan awal. Akhiri kalimat dengan bold: **(BERKESADARAN)**.
+         - Isi Kolom Kegiatan:
+           WAJIB Gunakan Penomoran (1, 2, 3):
+           1. Pembukaan (Salam, doa, presensi).
+           2. Apersepsi (Mengaitkan dengan materi sebelumnya).
+           3. Pemanasan / Warming Up (Aktivitas fisik terkait materi).
+           
+           Akhiri dengan teks bold di baris baru: <br>**(BERKESADARAN)**
          - Isi Kolom Waktu: (durasi, e.g. 15 Menit)
 
       2. Baris Inti:
          - Isi Kolom Tahap: "Inti (Mengaplikasikan)"
-         - Isi Kolom Kegiatan: Jelaskan kegiatan inti mendalam sesuai model ${data.pedagogy}. Akhiri kalimat dengan bold: **(BERMAKNA DAN MENGGEMBIRAKAN)**.
+         - Isi Kolom Kegiatan:
+           WAJIB Gunakan Penomoran (1, 2, 3, dst) untuk Langkah-langkah Sintaks sesuai model "${data.pedagogy}".
+           Generate SINTAKS OTOMATIS yang detail dan operasional membahas materi "${data.material}".
+           
+           Contoh SINTAKS (Sesuaikan dengan model yang dipilih):
+           - Inkuiri/Discovery: 1. Stimulasi, 2. Identifikasi Masalah, 3. Pengumpulan Data, 4. Pengolahan Data, 5. Pembuktian, 6. Generalisasi.
+           - PBL: 1. Orientasi Masalah, 2. Organisasi Belajar, 3. Penyelidikan, 4. Pengembangan Karya, 5. Evaluasi.
+           - TGfU/Game Based: 1. Pengenalan Permainan, 2. Kesadaran Taktis, 3. Pengambilan Keputusan, 4. Eksekusi Skill, 5. Penampilan.
+           
+           Akhiri dengan teks bold di baris baru: <br>**(BERMAKNA DAN MENGGEMBIRAKAN)**
          - Isi Kolom Waktu: (durasi)
 
       3. Baris Penutup:
          - Isi Kolom Tahap: "Penutup (Refleksi)"
-         - Isi Kolom Kegiatan: Jelaskan pendinginan & refleksi. Akhiri kalimat dengan bold: **(BERKESADARAN)**.
+         - Isi Kolom Kegiatan:
+           WAJIB Gunakan Penomoran (1, 2, 3):
+           1. Pendinginan (Cooling Down).
+           2. Refleksi & Umpan Balik.
+           3. Doa & Penutup.
+           
+           Akhiri dengan teks bold di baris baru: <br>**(BERKESADARAN)**
          - Isi Kolom Waktu: (durasi, e.g. 15 Menit)
 
     <!-- BAGIAN 5: ASESMEN PEMBELAJARAN (TABEL 5 - 2 KOLOM) -->
