@@ -39,7 +39,7 @@ const RPPMForm: React.FC<RPPMFormProps> = ({ formData, onChange, onSubmit, isLoa
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <label className={labelClasses}>Nama Satuan Pendidikan</label>
-            <input required type="text" name="schoolName" value={formData.schoolName} onChange={handleChange} className={inputClasses} placeholder="SD Negeri 1 Sungaiselan" />
+            <input required type="text" name="schoolName" value={formData.schoolName} onChange={handleChange} className={inputClasses} placeholder="SD Negeri 1 RPPM_PJOK" />
           </div>
           <div>
             <label className={labelClasses}>Jenjang Pendidikan</label>

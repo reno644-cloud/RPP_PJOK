@@ -43,7 +43,7 @@ const App: React.FC = () => {
                 </div>
               <div>
                   <h1 className="text-xl md:text-2xl font-bold uppercase tracking-wide text-white">RPP_PJOK</h1>
-                  <p className="text-sm md:text-base text-gray-400">SD Sungaiselan</p>
+                  <p className="text-sm md:text-base text-gray-400">RPPM_PJOK</p>
               </div>
             </div>
             
@@ -100,7 +100,7 @@ const App: React.FC = () => {
       
       <footer className="bg-gray-900 border-t border-gray-800 text-gray-500 py-6 mt-12">
           <div className="max-w-7xl mx-auto text-center text-sm">
-              <p>&copy; {new Date().getFullYear()} RPP_PJOK SD Sungaiselan. Dibuat dengan Teknologi Gemini AI.</p>
+              <p>&copy; {new Date().getFullYear()} RPPM_PJOK. Dibuat dengan Teknologi Gemini AI.</p>
           </div>
       </footer>
     </div>
